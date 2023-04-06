@@ -1,0 +1,23 @@
+<div>
+  <div>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>Custom Toolbar</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+  <br />
+
+  <div>
+    <button style="margin: 2px" *ngFor="let data of fruitsData" (click)="showDetails(data)">
+     {{data.name}}
+    </button>
+  </div>
+	<br>
+
+	<mat-card *ngIf="showCard">
+{{showCard.name}}	
+{{showCard.quantity}}	
+{{showCard.img}}
+	</mat-card>
+</div>
