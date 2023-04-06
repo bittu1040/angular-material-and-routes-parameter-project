@@ -19,7 +19,7 @@ export class MainComponent implements OnInit {
   }
 
 
-  show(id){
-    this.router.navigate(['details', id, 'Fred', {foo: 'foo2', me: 'Greg'}])
+  show(id, name){
+    this.router.navigate(['details', id, name])
   }
 }

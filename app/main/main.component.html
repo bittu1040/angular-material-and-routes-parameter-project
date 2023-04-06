@@ -1,16 +1,20 @@
 <h1>Products</h1>
 
-<div class="row">
-  <div class="column" style="border-right: dotted; border-width: thin">
-    <ul>
-      <li *ngFor="let product of products" class="pad">
-        <button (click)="show(product.id)"> {{product.name}}</button>
-      </li>
-    </ul>
+
+  <div style="border: 2px solid; display: flex">
+      <p *ngFor="let product of products" >
+        <button  (click)="show(product.id, product.name)"> {{product.name}}</button>
+      </p>
   </div>
   <div class="column" >
     <h2>Details</h2>
     <router-outlet></router-outlet>
   </div>
-</div>
+
+
+  <br>
+  <hr>
+
+
+
 

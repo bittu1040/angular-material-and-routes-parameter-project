@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./instructions.component.css']
 })
 export class InstructionsComponent implements OnInit {
-  outletHTML = '<router-outlet></router-outlet>';
 
   constructor() { }
 
