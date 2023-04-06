@@ -1,7 +1,7 @@
 <h1>Products</h1>
 
 
-  <div style="border: 2px solid; display: flex">
+  <div style="border: 2px solid; display: flex; justify-content: space-around">
       <p *ngFor="let product of products" >
         <button  (click)="show(product.id, product.name)"> {{product.name}}</button>
       </p>
